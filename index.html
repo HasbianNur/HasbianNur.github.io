@@ -246,18 +246,29 @@
         <i class="fa fa-envelope" style="width:30px"> </i> Email: kitaraja600@gmail.com<br>
       </div>
       <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
+        <form name="hasbi-contact-form">
+          <div class="alert alert-dark alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terima Kasih!</strong> Pesan anda suda kami terima.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Nama" required name="Nama">
+              <input class="w3-input w3-border" type="text" placeholder="Nama" name="nama">
             </div>
             <div class="w3-half">
-              <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
+              <input class="w3-input w3-border" type="email" placeholder="Email" name="email">
             </div>
           </div>
-          Pesan: <textarea name="comment" rows="5" cols="40"></textarea>
-          <button class="w3-button w3-black w3-section w3-right" type="submit">KIRIM</button>
-          <a href="mailto:kitaraja600@gmail.com">Atau bisa juga dengan klik link ini</a>
+          <div>
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-kirim">Kirim</button>
+
+          <button class="btn btn-dark btn-loading d-none" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="visually-hidden">Loading...</span>
+          </button>
         </form>
       </div>
     </div>
@@ -276,6 +287,35 @@
         $(".navigation-menu").toggleClass("active");
       });
     </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx0KOfrI9dDg2_oCNSmbNF3qDYVVbzEr1BD025t-i2j6v40v5NEWNKn2Xzj4C7XPX_HKQ/exec'
+  const form = document.forms['hasbi-contact-form'];
+  const btnkirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.my-alert');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    // ketika tombol submit diklik
+    // tampilkan tombol loading, hilangkan tombol kirim
+    btnLoading.classList.toggle('d-none');
+    btnkirim.classList.toggle('d-none');
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        // tampilkan tombol kirim, hilangkan tombol loading
+        btnLoading.classList.toggle('d-none');
+        btnkirim.classList.toggle('d-none');
+        //  tampilkan alert
+        myAlert.classList.toggle('d-none');
+        // reset formnya
+        form.reset();
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
     
   </body>
 </html>
