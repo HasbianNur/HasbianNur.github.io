@@ -20,6 +20,7 @@ header{
 li{
     list-style-type: none;
     display: inline-block;
+    color: white;
 }
 
 a{
