@@ -28,7 +28,7 @@ body {
 
 header {
     height: 200px;
-    background-image:   moon5.jpg;
+    background-image: url(../img/moon5.jpg);
 }
 
 h1 {
