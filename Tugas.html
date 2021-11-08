@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tugas HTML dan CSS</title>
+        <link rel="stylesheet" href="css/style3.css">
+		<style type="text/css"></style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<nav>
+					<ul>
+						<li><a href="halaman utama.html" class="current">Halaman Utama</a></li>
+						<li><a href="https://www.youtube.com/channel/UCANGPr2O7POeWkh9CZR7f2A">You Tube</a></li>
+						<li><a href="https://www.instagram.com/kingindo_30/">Instagram</a></li>
+						<li><a href="projek.html">Game</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section class="courses">
+				<article>
+					<figure>
+						<img src="img/moon.jpg" alt="Harvest Moon Back to Nature">
+						<figcaption>Harvest Moon Back to Nature</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Harvest Moon Back to Nature</h2>
+						<h3>Game PS 1</h3>
+					</hgroup>
+					<p>Harvest Moon: Back to Nature (牧場物語～ハーベストムーン～ Bokujō Monogatari Harvest Moon) adalah sebuah seri permainan video simulasi permainan yang dikembangkan oleh Victor Interactive Software.</p>
+				</article>    
+				<article>
+					<figure>
+						<div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="240">
+    <source src="gameplay.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 240; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+
+<p>Sumber <a href="https://youtu.be/y8AX4EL-i1A" target="_blank">Gameplay Harvest Moon Back to Nature</a>.</p>
+						<figcaption>Gameplay</figcaption>
+					</figure>
+					<hgroup>
+						<h2>Kisah HMBTN</h2>
+						<h3>Alur Cerita</h3>
+					</hgroup>
+					<p>Harvest Moon: Back to Nature menceritakan tentang seorang anak laki-laki (karakter utama dalam game) untuk pergi berlibur musim panas ke kebun kakeknya, namun saat itu kakeknya sangat sibuk mengurusi kebun sehingga tak punya waktu untuk bermain bersamanya.</p>
+				</article>    
+			</section>
+			<aside>
+				<section class="popular-recipes">
+					<h2>Berikut Beberapa Series dari Harvest Moon</h2>
+					<a href="">Harvest Moon</a>
+					<a href="">Harvest Moon GB</a>
+					<a href="">Harvest Moon 64</a>
+					<a href="">Harvest Moon 2 GBC</a>
+				</section>
+				<section class="contact-details">
+					<h2>Referensi</h2>
+					<a href="https://www.dicoding.com/blog/contoh-coding-html-website-dalam-15-menit/">Dicoding</a>
+					<a href="https://www.w3schools.com/html/html5_video.asp">W3Schools</a>
+					<a href="https://id.wikipedia.org/wiki/Harvest_Moon:_Back_to_Nature">Wikipedia</a>
+					<a href="https://hobigame.id/guide/walkthrough-harvest-moon-back-to-nature/">Jalan Cerita</a>
+					<a href="https://id.wikipedia.org/wiki/Daftar_permainan_video_Harvest_Moon">Series dari Harvest Moon</a>
+				</section>
+			</aside>
+			<footer>
+				&copy; 2021 Hasbian Nur
+			</footer>
+		</div>
+	</body>
+</html>
