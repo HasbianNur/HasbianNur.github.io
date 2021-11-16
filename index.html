@@ -1,271 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Halaman Utama | Hasbian Nur</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style halaman utama.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<!-- Link Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="style halaman utama.css">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Halaman Utama | Hasbian Nur</title>
-  </head>
-  <body>
-  <header>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <!-- Brand -->
-      <a href="#" class="logo"><img src="img/logo.png" alt="Logo RPL"></a>
-    
-      <!-- Links -->
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#profil">Profil</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#team">Team</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#kontak">Kontak</a>
-        </li>
-    
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-            More
-          </a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="daftar_tugas.html">Daftar Tugas</a>
-            <a class="dropdown-item" href="#">Bootcamp</a>
-            <a class="dropdown-item" href="menu_game.html">Game</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-
-    <div class="jumbotron" id="home">
-      <div class="container">
-        <div class="text-center">
-          <img src="img/hasbi.jpeg" class="rounded-circle img-thumbnail">
-          <h1 class="display-4">Hasbian Nur</h1>
-          <h3 class="lead">Siswa SMK Airlangga</h3>
-        </div>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#profil" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFIL</a>
+    <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
+    <a href="#kontak" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KONTAK</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="daftar_tugas.html" class="w3-bar-item w3-button">Daftar Tugas</a>
+        <a href="#" class="w3-bar-item w3-button">Bootcamp</a>
+        <a href="menu_game.html" class="w3-bar-item w3-button">Game</a>
       </div>
     </div>
+    <a href="#" class="logo"><img src="img/logo.png" alt="Logo"></a>
+  </div>
+</div>
 
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+  <a href="#profil" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROFIL</a>
+  <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM</a>
+  <a href="#kontak" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">KONTAK</a>
+</div>
 
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col text-center">
-            <h2>About</h2>
+<!-- Isi dari website ini -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+              <h1>Apa Itu Jurusan RPL?</h1>
+              <p>RPL adalah singkatan dari Rekayasa Perangkat Lunak dan merupakan sebuah jurusan yang ada di Sekolah Menengah Kejuruan (SMK). RPL adalah sebuah jurusan yang mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.</p>
+              <p>Bukan hanya itu, RPL juga berkaitan dengan software komputer mulai dari pembuatan website, aplikasi, game dan semua yang berkaitan dengan pemrograman dengan menguasai bahasa pemrograman tersebut. Intinya RPL tidak akan jauh-jauh dari tiga hal yaitu Coding, Desain dan Algoritma yang akan menjadi kunci keberhasilan rekayasa perangkat lunak tersebut.</p>
+      
+              <h1>Keunggulan Jurusan RPL</h1>
+              <p>1. Mampu bekerja di berbagai bidang karena sudah dibekali dengan berbagai ilmu dan pengetahuan.</p>
+              <p>2. Dalam melakukan kerja lapangan akan lebih mudah karena saat pembelajaran sudah sering melakukan kerja praktek.</p>
+              <p>3. Pekerjaan nya yang relatif mudah dan santai, dapat dikerjakan dimanapun dan kapanpun menggunakan koneksi tentunya.</p>
           </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-5">
-            <p>Menjadikan pusat pendidikan dan pelatihan terpadu yang unggul dalam imtaq dan iptek, berwawasan global dalam pelayanan yang diwujudkan memalui budaya “learning community”</p>
-          </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
+            <img src="img/logo rpl.png" alt="logo RPL" style="float:right;width:325px;height:250px;">
+            <div class="w3-third w3-center">
           </div>
         </div>
       </div>
-    </section>
 
-<!-- Isi Dari wWebsite Ini -->
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-        <h1>Apa Itu Jurusan RPL?</h1>
-        <p>RPL adalah singkatan dari Rekayasa Perangkat Lunak dan merupakan sebuah jurusan yang ada di Sekolah Menengah Kejuruan (SMK). RPL adalah sebuah jurusan yang mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan, pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.</p>
-        <p>Bukan hanya itu, RPL juga berkaitan dengan software komputer mulai dari pembuatan website, aplikasi, game dan semua yang berkaitan dengan pemrograman dengan menguasai bahasa pemrograman tersebut. Intinya RPL tidak akan jauh-jauh dari tiga hal yaitu Coding, Desain dan Algoritma yang akan menjadi kunci keberhasilan rekayasa perangkat lunak tersebut.</p>
-
-        <h1>Keunggulan Jurusan RPL</h1>
-        <p>1. Mampu bekerja di berbagai bidang karena sudah dibekali dengan berbagai ilmu dan pengetahuan.</p>
-        <p>2. Dalam melakukan kerja lapangan akan lebih mudah karena saat pembelajaran sudah sering melakukan kerja praktek.</p>
-        <p>3. Pekerjaan nya yang relatif mudah dan santai, dapat dikerjakan dimanapun dan kapanpun menggunakan koneksi tentunya.</p>
-    </div>
-      <img src="img/logo rpl.png" alt="logo RPL" style="float:right;width:325px;height:250px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>HTML 5</h1>
-      <h5 class="w3-padding-32">HTML5 adalah sebuah bahasa markah untuk menstrukturkan dan menampilkan isi dari World Wide Web, sebuah teknologi inti dari Internet. HTML5 adalah revisi kelima dari HTML (yang pertama kali diciptakan pada tahun 1990 dan versi keempatnya, HTML4, pada tahun 1997) dan hingga bulan Juni 2011 masih dalam pengembangan. Tujuan utama pengembangan HTML5 adalah untuk memperbaiki teknologi HTML agar mendukung teknologi multimedia terbaru, mudah dibaca oleh manusia dan juga mudah dimengerti oleh mesin.</h5>
-
-      <p class="w3-text-black">HTML5 merupakan salah satu karya Konsortium World Wide Web (World Wide Web Consortium, W3C) untuk mendefinisikan sebuah bahasa markah tunggal yang dapat ditulis dengan cara HTML ataupun XHTML. HTML5 merupakan jawaban atas pengembangan HTML 4.01 dan XHTML 1.1 yang selama ini berjalan terpisah, dan diimplementasikansecara berbeda-beda oleh banyak perangkat lunak pembuat web.</p>
-        <a href="#html5">Baca Lebih Lengkap...
-        <i class="fas fa-location-arrow"></i></a>
-    </div>
-      <img src="img/html5.png" alt="HTML 5" style="float:right;width:300px;height:350px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>CSS</h1>
-      <h5 class="w3-padding-32">Cascading Style Sheet (CSS) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemograman.</h5>
-
-      <p class="w3-text-black">Sama halnya styles dalam aplikasi pengolahan kata seperti Microsoft Word yang dapat mengatur beberapa style, misalnya heading, subbab, bodytext, footer, images, dan style lainnya untuk dapat digunakan bersama-sama dalam beberapa berkas (file).Pada umumnya CSS dipakai untuk memformat tampilan halaman web yang dibuat dengan bahasa HTML dan XHTML.</p>
-      <a href="#css">Baca Lebih Lengkap...
-        <i class="fas fa-location-arrow"></i></a>
-    </div>
-      <img src="img/css.png" alt="CSS" style="float:right;width:300px;height:350px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Java</h1>
-      <h5 class="w3-padding-32">Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995. Bahasa ini banyak mengadopsi sintaksis yang terdapat pada C dan C++ namun dengan sintaksis model objek yang lebih sederhana serta dukungan rutin-rutin aras bawah yang minimal. Aplikasi-aplikasi berbasis java umumnya dikompilasi ke dalam p-code (bytecode) dan dapat dijalankan pada berbagai Mesin Virtual Java (JVM).</h5>
-
-      <p class="w3-text-black">Java merupakan bahasa pemrograman yang bersifat umum/non-spesifik (general purpose), dan secara khusus didesain untuk memanfaatkan dependensi implementasi seminimal mungkin. Karena fungsionalitasnya yang memungkinkan aplikasi java mampu berjalan di beberapa platform sistem operasi yang berbeda, java dikenal pula dengan slogannya, "Tulis sekali, jalankan di mana pun". Saat ini java merupakan bahasa pemrograman yang paling populer digunakan, dan secara luas dimanfaatkan dalam pengembangan berbagai jenis perangkat lunak aplikasi ataupun aplikasi</p>
-        <a href="#java">Baca Lebih Lengkap...
-        <i class="fas fa-location-arrow"></i></a>
-    </div>
-      <img src="img/java.png" alt="Java" style="float:right;width:300px;height:350px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-</div>
-
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Boostrap 4</h1>
-      <h5 class="w3-padding-32">Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML dan CSS untuk tipografi, formulir, tombol, navigasi, dan komponen antarmuka lainnya, serta juga ekstensi opsional JavaScript. Tidak seperti kebanyakan kerangka kerja web lainnya, kerangka kerja ini hanya fokus pada pengembangan front-end saja.</h5>
-
-      <p class="w3-text-black">Pada 29 Oktober 2014, Mark Otto mengumumkan bahwa Bootstrap 4 sedang dalam pengembangan.[9] Versi alfa pertama dari Bootstrap 4 dirilis pada 19 Agustus 2015.[10] Pada 6 September 2016, Mark menghentikan pengerjaan Bootstrap 3 dalam rangka untuk meluangkan waktu untuk pengerjaan Bootstrap 4. Sejauh ini, sudah lebih dari 17.500 kommit yang telah dibuat untuk basis kode Bootstrap 4. Versi beta pertama dirilis pada 10 Agustus 2017.</p>
-      <a href="#b4">Baca Lebih Lengkap...
-      <i class="fas fa-location-arrow"></i></a>
-    </div>
-      <img src="img/B4.jpg" alt="Bootstrap" style="float:right;width:300px;height:350px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-</div>
-
-<div class="w3-container w3-content w3-right w3-padding-64" style="max-width:800px">
-    <h2 class="w3-wide">Software Engineering</h2>
-    <h5 class="w3-padding-32">Dikutip dari Institute of Electrical and Electronics Engineers/IEEE (1993), pengertian software engineering adalah suatu pendekatan teknologi secara sistematis, terstruktur dan disiplin. Meski pada dasarnya merupakan salah satu cabang ilmu komputer guna mengetahui sesuatu yang salah terhadap sebuah perangkat lunak, kini fungsinya melebar lebih luas lagi.</h5>
-  
-        <p class="w3-text-black">Rekayasa perangkat lunak dibutuhkan tak cuma ketika ditemukan kesalahan pengoperasian semata, namun lebih kepada bagaimana sebuah perangkat lunak bekerja sesuai dengan apa yang menjadi kebutuhan end-user atau penggunanya.</p>
-        <p>Tak seperti hardware yang dibuat di pabrik, elemen software bersifat logis. Elemen software juga tidak bisa aus seperti hardware, namun peluang untuk rusak cukup besar. Sehingga, software lebih menekankan pada rekayasa dan pengembangan.</p>
+      <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+              <h1>Software Engineering</h1>
+              <p>Dikutip dari Institute of Electrical and Electronics Engineers/IEEE (1993), pengertian software engineering adalah suatu pendekatan teknologi secara sistematis, terstruktur dan disiplin. Meski pada dasarnya merupakan salah satu cabang ilmu komputer guna mengetahui sesuatu yang salah terhadap sebuah perangkat lunak, kini fungsinya melebar lebih luas lagi.</p>
+              <p>Rekayasa perangkat lunak dibutuhkan tak cuma ketika ditemukan kesalahan pengoperasian semata, namun lebih kepada bagaimana sebuah perangkat lunak bekerja sesuai dengan apa yang menjadi kebutuhan end-user atau penggunanya.</p>
+              <p>Tak seperti hardware yang dibuat di pabrik, elemen software bersifat logis. Elemen software juga tidak bisa aus seperti hardware, namun peluang untuk rusak cukup besar. Sehingga, software lebih menekankan pada rekayasa dan pengembangan.</p>
+          </div>
+            <img src="img/apa itu SE.png" alt="SE" style="float:right;width:325px;height:250px;">
+            <div class="w3-third w3-center">
+          </div>
+        </div>
       </div>
-        <img src="img/apa itu SE.png" alt="SE" style="float:left;width:535px;height:450px;">
-        <div class="w3-third w3-center">
+
+      <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+              <h1>HTML 5</h1>
+              <p>HTML5 adalah sebuah bahasa markah untuk menstrukturkan dan menampilkan isi dari World Wide Web, sebuah teknologi inti dari Internet. HTML5 adalah revisi kelima dari HTML (yang pertama kali diciptakan pada tahun 1990 dan versi keempatnya, HTML4, pada tahun 1997) dan hingga bulan Juni 2011 masih dalam pengembangan. Tujuan utama pengembangan HTML5 adalah untuk memperbaiki teknologi HTML agar mendukung teknologi multimedia terbaru, mudah dibaca oleh manusia dan juga mudah dimengerti oleh mesin.</p>
+              <p>HTML5 merupakan salah satu karya Konsortium World Wide Web (World Wide Web Consortium, W3C) untuk mendefinisikan sebuah bahasa markah tunggal yang dapat ditulis dengan cara HTML ataupun XHTML. HTML5 merupakan jawaban atas pengembangan HTML 4.01 dan XHTML 1.1 yang selama ini berjalan terpisah, dan diimplementasikansecara berbeda-beda oleh banyak perangkat lunak pembuat web.</p>
+              <p></p>
+
+              <h1>Tool dalam Menulis suatu program dengan Visual Studio Code</h1>
+              <p>Langkah awal dalam membuat suatu website dengan HTML 5 adalah dengan menginstall Visual Studio Code di browser anda. Atau dengan cara klik link di bawah ini</p>
+              <a href="https://code.visualstudio.com/download">Download</a>
+              <p>Jika sudah download maka tampilan pertama akan seperti gambar di bawah ini.</p>
+              <img src="img/VS1.png" alt="Visual Studio Code" style="width:750px;height:500px;">
+              <p>Lalu salin lah source code di bawah ini.</p>
+              <img src="img/1.png" alt="Visual Studio Code" style="width:750px;height:500px;">
+              <p>Jika Sudah maka tekan ctrl+s lalu buka file anda lalu pilih nama file yang tadi anda buat. Maka tampilan nya akan seperti di bawah ini.</p>
+              <img src="img/2.png" alt="Visual Studio Code" style="width:750px;height:500px;">
+              <p>Jika ingin memperbesar huruf pakai tag h1 atau ingin mengecilkan huruf pakai h6. Seperti yang ada di bawah ini.</p>
+              <img src="img/3.png" alt="Visual Studio Code" style="width:750px;height:500px;">
+              <p>Maka hasil nya akan seperti di bawah ini</p>
+              <img src="img/4.png" alt="Visual Studio Code" style="width:750px;height:500px;">
+          </div>
+            <img src="img/html5.png" alt="HTML 5" style="float:right;width:325px;height:350px;">
+            <div class="w3-third w3-center">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+              <h1>CSS</h1>
+              <p>Cascading Style Sheet (CSS) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemograman.</p>
+              <p>Sama halnya styles dalam aplikasi pengolahan kata seperti Microsoft Word yang dapat mengatur beberapa style, misalnya heading, subbab, bodytext, footer, images, dan style lainnya untuk dapat digunakan bersama-sama dalam beberapa berkas (file).Pada umumnya CSS dipakai untuk memformat tampilan halaman web yang dibuat dengan bahasa HTML dan XHTML.</p>
+              
+              <h1>Cara memanfaatkan CSS dalam Visual Studio Code</h1>
+              <p>Langkah pertama adalah membuat file css tersebut dengan cara (namafile).css. Atau dengan salin source code di bawah ini</p>
+              <p> < link rel="stylesheet" href="style.css" > </p>
+          </div>
+            <img src="img/css.png" alt="CSS" style="float:right;width:325px;height:350px;">
+            <div class="w3-third w3-center">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+              <h1>Bootstrap</h1>
+              <p>Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML dan CSS untuk tipografi, formulir, tombol, navigasi, dan komponen antarmuka lainnya, serta juga ekstensi opsional JavaScript. Tidak seperti kebanyakan kerangka kerja web lainnya, kerangka kerja ini hanya fokus pada pengembangan front-end saja.</p>
+              <p>Pada 29 Oktober 2014, Mark Otto mengumumkan bahwa Bootstrap 4 sedang dalam pengembangan.[9] Versi alfa pertama dari Bootstrap 4 dirilis pada 19 Agustus 2015.[10] Pada 6 September 2016, Mark menghentikan pengerjaan Bootstrap 3 dalam rangka untuk meluangkan waktu untuk pengerjaan Bootstrap 4. Sejauh ini, sudah lebih dari 17.500 kommit yang telah dibuat untuk basis kode Bootstrap 4. Versi beta pertama dirilis pada 10 Agustus 2017.</p>
+          </div>
+            <img src="img/bootstrap.png" alt="Bootstrap 4" style="float:right;width:325px;height:350px;">
+            <div class="w3-third w3-center">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+          <div class="w3-twothird">
+              <h1>Java</h1>
+              <p>Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995. Bahasa ini banyak mengadopsi sintaksis yang terdapat pada C dan C++ namun dengan sintaksis model objek yang lebih sederhana serta dukungan rutin-rutin aras bawah yang minimal. Aplikasi-aplikasi berbasis java umumnya dikompilasi ke dalam p-code (bytecode) dan dapat dijalankan pada berbagai Mesin Virtual Java (JVM).</p>
+              <p>Java merupakan bahasa pemrograman yang bersifat umum/non-spesifik (general purpose), dan secara khusus didesain untuk memanfaatkan dependensi implementasi seminimal mungkin. Karena fungsionalitasnya yang memungkinkan aplikasi java mampu berjalan di beberapa platform sistem operasi yang berbeda, java dikenal pula dengan slogannya, "Tulis sekali, jalankan di mana pun". Saat ini java merupakan bahasa pemrograman yang paling populer digunakan, dan secara luas dimanfaatkan dalam pengembangan berbagai jenis perangkat lunak aplikasi ataupun aplikasi</p>
+          </div>
+            <img src="img/java.png" alt="Java" style="float:right;width:325px;height:350px;">
+            <div class="w3-third w3-center">
+          </div>
+        </div>
       </div>
 </div>
+<!-- Akhir isi dari website ini -->
 
- <div class="w3-container w3-content w3-left w3-padding-64" style="max-width:800px" id="html5">
-  <h2 class="w3-wide">HTML 5</h2>
-      <h5 class="w3-padding-32">HTML5 adalah sebuah bahasa markah untuk menstrukturkan dan menampilkan isi dari World Wide Web, sebuah teknologi inti dari Internet. HTML5 adalah revisi kelima dari HTML (yang pertama kali diciptakan pada tahun 1990 dan versi keempatnya, HTML4, pada tahun 1997) dan hingga bulan Juni 2011 masih dalam pengembangan. Tujuan utama pengembangan HTML5 adalah untuk memperbaiki teknologi HTML agar mendukung teknologi multimedia terbaru, mudah dibaca oleh manusia dan juga mudah dimengerti oleh mesin.</h5>
-
-      <p class="w3-text-black">HTML5 merupakan salah satu karya Konsortium World Wide Web (World Wide Web Consortium, W3C) untuk mendefinisikan sebuah bahasa markah tunggal yang dapat ditulis dengan cara HTML ataupun XHTML. HTML5 merupakan jawaban atas pengembangan HTML 4.01 dan XHTML 1.1 yang selama ini berjalan terpisah, dan diimplementasikansecara berbeda-beda oleh banyak perangkat lunak pembuat web.</p>
-    
-      <h2 class="w3-padding-32">Tool dalam Menulis suatu program dengan Visual Studio Code</h2>
-
-      <h5 class="w3-padding-32">Langkah awal dalam membuat suatu website dengan HTML 5 adalah dengan menginstall Visual Studio Code di browser anda. Atau dengan cara klik link di bawah ini</h5>
-      <a href="https://code.visualstudio.com/download">Download</a>
-
-      <h2 class="w3-padding-32">Dasar Dalam Membuat Website</h2>
-
-      <p class="w3-text-black">Jika sudah download maka tampilan pertama akan seperti gambar di bawah ini.</p>
-      <img src="img/VS1.png" alt="Visual Studio Code" style="width:750px;height:500px;">
-
-      <p class="w3-text-black">Lalu salin lah source code di bawah ini.</p>
-      <img src="img/1.png" alt="Visual Studio Code" style="width:750px;height:500px;">
-
-      <p class="w3-text-black">Jika Sudah maka tekan ctrl+s lalu buka file anda lalu pilih nama file yang tadi anda buat. Maka tampilan nya akan seperti di bawah ini.</p>
-      <img src="img/2.png" alt="Visual Studio Code" style="width:750px;height:500px;">
-
-      <p class="w3-text-black">Jika ingin memperbesar huruf pakai tag h1 atau ingin mengecilkan huruf pakai h6. Seperti yang ada di bawah ini.</p>
-      <img src="img/3.png" alt="Visual Studio Code" style="width:750px;height:500px;">
-      <img src="img/4.png" alt="Visual Studio Code" style="width:750px;height:500px;">
-
-    </div>
-      <img src="img/html5.png" alt="HTML 5" style="float:right;width:400px;height:450px;">
-      <div class="w3-third w3-right">
-    </div>
-
-    </div>
-    </div>
-  </div>
-</div>
-  </div>
-
-  <div class="w3-container w3-content w3-right w3-padding-64" style="max-width:800px" id="css">
-  <h2 class="w3-wide">CSS</h2>
-  <h5 class="w3-padding-32">Cascading Style Sheet (CSS) merupakan aturan untuk mengatur beberapa komponen dalam sebuah web sehingga akan lebih terstruktur dan seragam. CSS bukan merupakan bahasa pemograman.</h5>
-
-      <p class="w3-text-black">Sama halnya styles dalam aplikasi pengolahan kata seperti Microsoft Word yang dapat mengatur beberapa style, misalnya heading, subbab, bodytext, footer, images, dan style lainnya untuk dapat digunakan bersama-sama dalam beberapa berkas (file).Pada umumnya CSS dipakai untuk memformat tampilan halaman web yang dibuat dengan bahasa HTML dan XHTML.</p>
-
-      <h2 class="w3-padding-32">Cara memanfaatkan CSS dalam Visual Studio Code</h2>
-      <p>Langkah pertama adalah membuat file css tersebut dengan cara (namafile).css. Supaya lebih paham silahkan klik link di bawah ini</p>
-      <a href="https://youtube.com/playlist?list=PLFIM0718LjIUBrbm6Gdh6k7ZUvPIAZm7p">Klik Link Ini</a>
-
-      <p>Jika sudah anda bisa memodifikasi halaman website anda dengan lebih mudah. Berikut cara agar memodifikasi web dengan CSS</p>
-
-    </div>
-      <img src="img/css.png" alt="Airlangga" style="float:right;width:300px;height:350px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-
-  <div class="w3-container w3-content w3-left w3-padding-64" style="max-width:800px" id="java">
-  <h2 class="w3-wide">Java</h2>
-   <h5 class="w3-padding-32">Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995. Bahasa ini banyak mengadopsi sintaksis yang terdapat pada C dan C++ namun dengan sintaksis model objek yang lebih sederhana serta dukungan rutin-rutin aras bawah yang minimal. Aplikasi-aplikasi berbasis java umumnya dikompilasi ke dalam p-code (bytecode) dan dapat dijalankan pada berbagai Mesin Virtual Java (JVM).</h5>
-
-      <p class="w3-text-black">Java merupakan bahasa pemrograman yang bersifat umum/non-spesifik (general purpose), dan secara khusus didesain untuk memanfaatkan dependensi implementasi seminimal mungkin. Karena fungsionalitasnya yang memungkinkan aplikasi java mampu berjalan di beberapa platform sistem operasi yang berbeda, java dikenal pula dengan slogannya, "Tulis sekali, jalankan di mana pun". Saat ini java merupakan bahasa pemrograman yang paling populer digunakan, dan secara luas dimanfaatkan dalam pengembangan berbagai jenis perangkat lunak aplikasi ataupun aplikasi</p>
-    </div>
-      <img src="img/java.png" alt="Airlangga" style="float:right;width:400px;height:450px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-
-  <div class="w3-container w3-content w3-right w3-padding-64" style="max-width:800px" id="b4">
-  <h2 class="w3-wide">Bootstrap 4</h2>
-  <h5 class="w3-padding-32">Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML dan CSS untuk tipografi, formulir, tombol, navigasi, dan komponen antarmuka lainnya, serta juga ekstensi opsional JavaScript. Tidak seperti kebanyakan kerangka kerja web lainnya, kerangka kerja ini hanya fokus pada pengembangan front-end saja.</h5>
-
-      <p class="w3-text-black">Pada 29 Oktober 2014, Mark Otto mengumumkan bahwa Bootstrap 4 sedang dalam pengembangan.[9] Versi alfa pertama dari Bootstrap 4 dirilis pada 19 Agustus 2015.[10] Pada 6 September 2016, Mark menghentikan pengerjaan Bootstrap 3 dalam rangka untuk meluangkan waktu untuk pengerjaan Bootstrap 4. Sejauh ini, sudah lebih dari 17.500 kommit yang telah dibuat untuk basis kode Bootstrap 4. Versi beta pertama dirilis pada 10 Agustus 2017.</p>
-    </div>
-      <img src="img/B4.jpg" alt="Airlangga" style="float:right;width:530px;height:450px;">
-      <div class="w3-third w3-center">
-    </div>
-  </div>
-
-      <!-- profil -->
-      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="profil">
+    <!-- Awal Profil -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="profil">
         <h2 class="w3-wide">PROFIL</h2>
         <p class="w3-opacity w3-center"><i>Profil Saya!</i></p><br>
         <div class="wrap">
@@ -292,128 +180,165 @@
             </table>
         </div>
       </div>
+      <!-- Akhir Profil -->
 
-    <!-- Team -->
-    <div id="team">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center">TEAM</h2>
-        <p class="w3-opacity w3-center"><i>Temui Team Kita!</i></p><br>
-        <div class="column">
-          <div class="card">
-            <div class="content">
-              <div class="front">
-                <img class="profile" width="50%"
-                  src="img/hasbi.jpeg"
-                  alt="Hasbian Nur">
-                <h2>Hasbian Nur</h2>
-              </div>
-              <div class="back from-bottom">
-                <h2>Hasbian Nur</h2>
-                <p class="des">
-                  Siswa SMK Airlangga
-                </p>
-                <p class="des">
-                  Menjadikan pusat pendidikan dan pelatihan terpadu yang unggul dalam imtaq dan iptek, berwawasan global dalam pelayanan yang diwujudkan memalui budaya “learning community”
-                </p>
-                <ul class="social-icon">
-                  <li><a href="https://web.facebook.com/hasbian.nur.31/"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="https://www.instagram.com/kingindo_30/"><i class="fab fa-instagram"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCANGPr2O7POeWkh9CZR7f2A"><i class="fab fa-youtube"></i></a></li>
-                </ul>
+      <!-- Awal Team -->
+      <div id="team">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+          <h2 class="w3-wide w3-center">TEAM</h2>
+          <p class="w3-opacity w3-center"><i>Temui Team Kita!</i></p><br>
+          <div class="column">
+            <div class="card">
+              <div class="content">
+                <div class="front">
+                  <img class="profile" width="50%"
+                    src="img/hasbi.jpeg"
+                    alt="Hasbian Nur">
+                  <h2>Hasbian Nur</h2>
+                </div>
+                <div class="back from-bottom">
+                  <h2>Hasbian Nur</h2>
+                  <p class="des">
+                    Siswa SMK Airlangga
+                  </p>
+                  <p class="des">
+                    Menjadikan pusat pendidikan dan pelatihan terpadu yang unggul dalam imtaq dan iptek, berwawasan global dalam pelayanan yang diwujudkan memalui budaya “learning community”
+                  </p>
+                  <ul class="social-icon">
+                    <li><a href="https://web.facebook.com/hasbian.nur.31/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/kingindo_30/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCANGPr2O7POeWkh9CZR7f2A"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
+          </div>
+      <!-- Akhir Team -->
+
+      <!-- Awal Kontak -->
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="kontak">
+        <h2 class="w3-wide w3-center">KONTAK</h2>
+        <p class="w3-opacity w3-center"><i>Ada Pesan? Kirimkan Pesan Anda!</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Kalimantan Timur,Balikpapan<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +6285103170409<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: kitaraja600@gmail.com<br>
+          </div>
+          <div class="w3-col m6">
+            <form name="hasbi-contact-form">
+              <div class="alert alert-dark alert-dismissible fade show d-none my-alert" role="alert">
+                <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Nama" name="nama">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="email" placeholder="Email" name="email">
+                </div>
+              </div>
+              <div>
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark btn-kirim">Kirim</button>
+    
+              <button class="btn btn-dark btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                <span class="visually-hidden">Loading...</span>
+              </button>
+            </form>
           </div>
         </div>
-
-    <!-- Kontak -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="kontak">
-    <h2 class="w3-wide w3-center">KONTAK</h2>
-    <p class="w3-opacity w3-center"><i>Ada Pesan? Kirimkan Pesan Anda!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Kalimantan Timur,Balikpapan<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +6285103170409<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: kitaraja600@gmail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form name="hasbi-contact-form">
-          <div class="alert alert-dark alert-dismissible fade show d-none my-alert" role="alert">
-            <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-          </div>
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Nama" name="nama">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="email" placeholder="Email" name="email">
-            </div>
-          </div>
-          <div>
-            <label for="pesan" class="form-label">Pesan</label>
-            <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark btn-kirim">Kirim</button>
-
-          <button class="btn btn-dark btn-loading d-none" type="button" disabled>
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            <span class="visually-hidden">Loading...</span>
-          </button>
-        </form>
       </div>
     </div>
-  </div>
+      <!-- Akhir Kontak -->
+  
+<!-- End Page Content -->
 </div>
 
-    <!-- footer -->
-    <footer class="bg-dark text-white mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <p>Copyright &copy; 2021 Hasbian Nur</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script type="text/javascript">
-      $(".menu-toggle-btn").click(function(){
-        $(this).toggleClass("fa-times");
-        $(".navigation-menu").toggleClass("active");
-      });
-    </script>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p>Copyright &copy; 2021 Hasbian Nur</p>
+</footer>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbx0KOfrI9dDg2_oCNSmbNF3qDYVVbzEr1BD025t-i2j6v40v5NEWNKn2Xzj4C7XPX_HKQ/exec'
-  const form = document.forms['hasbi-contact-form'];
-  const btnkirim = document.querySelector('.btn-kirim');
-  const btnLoading = document.querySelector('.btn-loading');
-  const myAlert = document.querySelector('.my-alert');
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    // ketika tombol submit diklik
-    // tampilkan tombol loading, hilangkan tombol kirim
-    btnLoading.classList.toggle('d-none');
-    btnkirim.classList.toggle('d-none');
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        // tampilkan tombol kirim, hilangkan tombol loading
-        btnLoading.classList.toggle('d-none');
-        btnkirim.classList.toggle('d-none');
-        //  tampilkan alert
-        myAlert.classList.toggle('d-none');
-        // reset formnya
-        form.reset();
-        console.log('Success!', response)
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  </body>
+
+<script type="text/javascript">
+    $(".menu-toggle-btn").click(function(){
+      $(this).toggleClass("fa-times");
+      $(".navigation-menu").toggleClass("active");
+    });
+  </script>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbx0KOfrI9dDg2_oCNSmbNF3qDYVVbzEr1BD025t-i2j6v40v5NEWNKn2Xzj4C7XPX_HKQ/exec'
+const form = document.forms['hasbi-contact-form'];
+const btnkirim = document.querySelector('.btn-kirim');
+const btnLoading = document.querySelector('.btn-loading');
+const myAlert = document.querySelector('.my-alert');
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  // ketika tombol submit diklik
+  // tampilkan tombol loading, hilangkan tombol kirim
+  btnLoading.classList.toggle('d-none');
+  btnkirim.classList.toggle('d-none');
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      // tampilkan tombol kirim, hilangkan tombol loading
+      btnLoading.classList.toggle('d-none');
+      btnkirim.classList.toggle('d-none');
+      //  tampilkan alert
+      myAlert.classList.toggle('d-none');
+      // reset formnya
+      form.reset();
+      console.log('Success!', response)
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
 </html>
