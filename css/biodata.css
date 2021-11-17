@@ -1,0 +1,31 @@
+body{
+  background-color: aquamarine;
+  padding-top: 15px;
+}
+.main-section{
+border:1px solid  white;
+background-color: #fff;
+}
+.profile-header{
+background-color: #1ceda4;
+height:150px;
+}
+.user-detail{
+margin:-50px 0px 30px 0px;
+}
+.user-detail img{
+height:100px;
+width:100px;
+}
+.user-detail h5{
+margin:15px 0px 5px 0px;
+}
+.user-social-detail{
+padding:15px 0px;
+background-color: #06cf88;
+}
+.user-social-detail a i{
+color:#fff;
+font-size:23px;
+padding: 0px 5px;
+}
