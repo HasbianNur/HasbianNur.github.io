@@ -13,7 +13,9 @@ background:rgb(33,150,243);
 height:70px;
 color:white;
 text-align:center;
-top:0;
+position: fixed;
+width: 100%;
+top: 0%;
 }
 header h1 {
 font-size:200%;
@@ -33,6 +35,9 @@ margin:0 auto;
 background:rgb(14, 14, 204);
 height:45px;
 margin:0 auto;
+position: fixed;
+width: 100%;
+top: 10%;
 }
 #menu ul,#menu li{
 margin:0 auto;
@@ -111,7 +116,7 @@ display:block
   transition: all 0.3s;
   box-sizing: border-box;
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   z-index: 99;
   height: 100%;
   width: 100%;
@@ -123,7 +128,7 @@ display:block
 .spinner {
   transition: all 0.3s;
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   height: 3px;
   width: 100%;
   background-color: #fff;
