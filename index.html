@@ -1,97 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Halaman Utama | Hasbian Nur</title>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/index.css">
 
-      <!-- Disable tap highlight on IE -->
-      <meta name="msapplication-tap-highlight" content="no">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <!-- Web Application Manifest -->
-      <link rel="manifest" href="manifest.json">
-
-      <!-- Add to homescreen for Chrome on Android -->
-      <meta name="mobile-web-app-capable" content="yes">
-      <meta name="application-name" content="Web Starter Kit">
-      <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-      <!-- Add to homescreen for Safari on iOS -->
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-status-bar-style" content="black">
-      <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-      <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
-
-      <!-- Tile icon for Win8 (144x144 + tile color) -->
-      <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-      <meta name="msapplication-TileColor" content="#2F3BA2">
-
-      <!-- Color the status bar on mobile devices -->
-      <meta name="theme-color" content="#2F3BA2">
-
-      <!-- Material Design icons -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-      <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
-
-      <!-- CSS -->
-      <link rel="stylesheet" href="css/index.css">
-
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Link Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  </head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Link Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-<body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-blue w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#profil" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFIL</a>
-    <a href="#team" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TEAM</a>
-    <a href="#kontak" class="w3-bar-item w3-button w3-padding-large w3-hide-small">KONTAK</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="daftar_tugas.html" class="w3-bar-item w3-button">Daftar Tugas</a>
-        <a href="#" class="w3-bar-item w3-button">Bootcamp</a>
-        <a href="menu_game.html" class="w3-bar-item w3-button">Game</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#profil" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROFIL</a>
-  <a href="#team" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM</a>
-  <a href="#kontak" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">KONTAK</a>
-</div>
-
-<!-- Isi dari website ini -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+</head>
+  <body>
+  <input type="checkbox" class="openMenu" id="openMenu"/>
+    <label for="openMenu" class="ToggleIcon">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+  <header>
+    <h1>Hasbian Nur</h1>
+  </header>  
+  <nav id="menu">
+    <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">PROFIL</a></li>
+    <li><a href="#">TEAM</a></li>
+    <li><a href="#">KONTAK</a></li>
+    <li><a class="sub" href="#">MORE</a>
+      <ul class="menus">
+      <li><a href="#">Daftar Tugas</a></li>
+      <li><a href="#">Bootcamp</a></li>
+      <li><a href='#'>Game</a></li>
+      </ul>
+    </li>	
+  </nav>
+  
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
     <div class="w3-row-padding w3-padding-64 w3-container">
         <div class="w3-content">
@@ -313,8 +269,6 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
       <!-- Akhir Kontak -->
-  
-<!-- End Page Content -->
 </div>
 
 <!-- Footer -->
@@ -322,48 +276,12 @@ body {font-family: "Lato", sans-serif}
     <p>Copyright &copy; 2021 Hasbian Nur</p>
 </footer>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-
 <script type="text/javascript">
-    $(".menu-toggle-btn").click(function(){
-      $(this).toggleClass("fa-times");
-      $(".navigation-menu").toggleClass("active");
-    });
-  </script>
+  $(".menu-toggle-btn").click(function(){
+    $(this).toggleClass("fa-times");
+    $(".navigation-menu").toggleClass("active");
+  });
+</script>
 
 <script>
 const scriptURL = 'https://script.google.com/macros/s/AKfycbx0KOfrI9dDg2_oCNSmbNF3qDYVVbzEr1BD025t-i2j6v40v5NEWNKn2Xzj4C7XPX_HKQ/exec'
@@ -373,30 +291,30 @@ const btnLoading = document.querySelector('.btn-loading');
 const myAlert = document.querySelector('.my-alert');
 
 form.addEventListener('submit', e => {
-  e.preventDefault()
-  // ketika tombol submit diklik
-  // tampilkan tombol loading, hilangkan tombol kirim
-  btnLoading.classList.toggle('d-none');
-  btnkirim.classList.toggle('d-none');
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => {
-      // tampilkan tombol kirim, hilangkan tombol loading
-      btnLoading.classList.toggle('d-none');
-      btnkirim.classList.toggle('d-none');
-      //  tampilkan alert
-      myAlert.classList.toggle('d-none');
-      // reset formnya
-      form.reset();
-      console.log('Success!', response)
-    })
-    .catch(error => console.error('Error!', error.message))
+e.preventDefault()
+// ketika tombol submit diklik
+// tampilkan tombol loading, hilangkan tombol kirim
+btnLoading.classList.toggle('d-none');
+btnkirim.classList.toggle('d-none');
+fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => {
+    // tampilkan tombol kirim, hilangkan tombol loading
+    btnLoading.classList.toggle('d-none');
+    btnkirim.classList.toggle('d-none');
+    //  tampilkan alert
+    myAlert.classList.toggle('d-none');
+    // reset formnya
+    form.reset();
+    console.log('Success!', response)
+  })
+  .catch(error => console.error('Error!', error.message))
 })
 </script>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-</body>
+  </body>
 </html>
