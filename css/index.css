@@ -1,22 +1,251 @@
-body{
-    background-image: url(../img/pattern.jpg);
-    margin: 0;
-  }
-
-  .logo{
-    float: right;
-    padding: 1px 0;
-  }
-  
-  .logo img{
-    height: 50px;
-  }
-.team{
-  text-align: center;
+body {
+  background-image: url(../img/pattern.jpg);
+  border: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+header {
+background:rgb(33,150,243);
+height:70px;
+color:white;
+text-align:center;
+top:0;
+}
+header h1 {
+font-size:200%;
+font-weight:700;
+text:transform:uppercase;
+line-height:70px;
+margin:0 auto;
+}	
+#menu{
+background:rgb(14, 14, 204);
+height:45px;
+margin:0 auto;
+}
+#menu ul,#menu li{
+margin:0 auto;
+padding:0 0;
+list-style:none
+}
+#menu ul{
+height:45px;
+width:auto;
+}
+#menu li{
+float:left;
+display:inline;
+position:relative;
+font-size:14px;
+color:#fff;
+font-weight:500;
+}
+#menu a{
+display:block;
+line-height:45px;
+padding:0 14px;
+text-decoration:none;
+color:#fff;
+}
+#menu li a:hover {
+color:#fff;
+background-color:rgb(17, 0, 255);
+transition: all 0.3s ease-in;
 }
 
-.social-icon{
-  list-style:none;
-  margin:10px;
-  padding:0px;
+/* Dropdown Menu */
+#menu a.sub:after{  /* Kode Panah */
+content:'';
+display:inline-block;
+background-color:#fff;
+color:#fff;
+width:12px;
+height:12px;
+margin-left:10px;
+vertical-align:-1px;
+transition:all .3s ease;
+background:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7,10L12,15L17,10H7Z`' fill='%23fff'/%3E%3C/svg%3E") center / 22px no-repeat;
+}
+#menu a.sub:hover:after{ 
+transform:rotate(180deg); /* Panah diputar saat disentuh mouse */
+}
+#menu ul.menus{ 
+height:auto;
+overflow:hidden;
+width:180px;
+background:rgb(21, 133, 207);
+position:absolute;
+z-index:99;
+display:none; /* Dropdown tersembunyi */
+left:0;
+}
+#menu ul.menus li{
+display:block;
+width:100%;
+}
+#menu ul.menus a{
+color:#fff;
+line-height:45px;
+}
+#menu ul.menus a:hover{
+background:#5d99a2;
+color:#fff;
+}
+#menu li:hover ul.menus{
+display:block
+}
+
+/* Toggle Icon Burger) */
+.ToggleIcon {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 27px;
+  right: 27px;
+  height: 22px;
+  width: 22px;	
+}
+.spinner {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+display:block;
+}
+.horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  float: left;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+}
+
+/* 	Efek icon burger berganti menjadi silang */
+input[type=checkbox]:checked ~ .ToggleIcon > .horizontal {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  opacity: 0;
+}
+input[type=checkbox]:checked ~ .ToggleIcon > .diagonal.part-1 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .ToggleIcon > .diagonal.part-2 {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+input.openMenu {
+  position: fixed;
+  top: -100px;
+  opacity: 0
+}
+
+/*	Sembunyikan Icon Burger */
+label.ToggleIcon {
+  display: none;
+
+}
+
+/*	Pada ukuran layar 960px mulai pengaturan Responsive */
+@media screen and (max-width:960px){
+#menu {
+display:none; /* menu horizantal disembunyikan */
+}	
+label.ToggleIcon {
+display:block; /* burger icon dimunculkan */
+}
+
+/* merubah menu menjadi vertikal ketika Burger icon diklik*/
+input[type="checkbox"]:checked ~ #menu {
+display: block;
+width: 100%;
+background: rgb(14, 14, 204);;
+position: fixed;
+top: 70px;
+left: 0;
+height: 100vh;
+overflow-y: visible;
+padding: 10px 0 0 0;
+scrollbar-width: none;
+scrollbar-width: none;
+-webkit-animation-name: slideInLeft;
+animation-name: slideInLeft;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+z-index: 9999;
+}
+input[type="checkbox"]:checked ~ #menu li {
+position: relative;
+margin:0;
+display: block;
+text-align: left;
+float:none;
+}
+input[type="checkbox"]:checked ~ #menu ul.menus{
+height:auto;
+overflow:hidden;
+width:100%;
+background:rgb(21, 133, 207);
+position:relative;
+}
+input[type=checkbox] {
+transition: all 0.3s;
+box-sizing: border-box;
+display: none;
+}
+
+/* memberikan efek slide muncul dari kiri */
+@-webkit-keyframes slideInLeft {
+  0%
+{
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    @keyframes slideInLeft {
+    0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
 }
