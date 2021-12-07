@@ -21,7 +21,14 @@ font-weight:700;
 text:transform:uppercase;
 line-height:70px;
 margin:0 auto;
-}	
+}
+
+.social-icon{
+  list-style:none;
+  margin:10px;
+  padding:0px;
+}
+
 #menu{
 background:rgb(14, 14, 204);
 height:45px;
