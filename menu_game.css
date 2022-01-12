@@ -1,29 +1,33 @@
-body{
-    background-image: url(../img/pattern.jpg);
-    margin: 0;
+body {
+  background-image: url(../img/pattern.jpg);
+  margin: 0;
 }
 
-header{
-    background-color:#02967C;
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    width: 100%;
-    top: 0%;
+header {
+  background-color: #02967c;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0%;
 }
 
-h3{
-    color: black;
+h3 {
+  color: black;
 }
 
-h1{
-    color: black;
-    text-align: center;
-    padding: 60px;
+h1 {
+  color: black;
+  text-align: center;
+  padding: 60px;
 }
 
-li{
-    list-style-type: none;
-    display: inline-block;
-    color:  white;
+li {
+  list-style-type: none;
+  display: inline-block;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
