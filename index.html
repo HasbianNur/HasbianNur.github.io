@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport"content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <title>Halaman Utama | Hasbian Nur</title>
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasbian Nur | Home</title>
+    <link rel="stylesheet" href="css/website.css">
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-<!-- Disable tap highlight on IE -->
-      <meta name="msapplication-tap-highlight" content="no">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-      <!-- Web Application Manifest -->
-      <link rel="manifest" href="manifest.json">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
 
-      <!-- Add to homescreen for Chrome on Android -->
-      <meta name="mobile-web-app-capable" content="yes">
-      <meta name="application-name" content="Web Starter Kit">
-      <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
 
-      <!-- Add to homescreen for Safari on iOS -->
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="apple-mobile-web-app-status-bar-style" content="black">
-      <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-      <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
 
-      <!-- Tile icon for Win8 (144x144 + tile color) -->
-      <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-      <meta name="msapplication-TileColor" content="#2F3BA2">
-
-      <!-- Color the status bar on mobile devices -->
-      <meta name="theme-color" content="#2F3BA2">
-
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-  <header>
-    <div class="container">
-        <input type="checkbox" name="" id="check">
-        
-        <div class="logo-container">
-            <h3 class="logo">Hasbian<span>Nur</span></h3>
+  <<nav>
+    <div class="navbar">
+      <i class='bx bx-menu'></i>
+      <div class="logo"><a href="#">HasbianNur</a></div>
+      <div class="nav-links">
+        <div class="sidebar-logo">
+          <span class="logo-name">HasbianNur</span>
+          <i class='bx bx-x' ></i>
         </div>
-
-        <div class="nav-btn">
-            <div class="nav-links">
-                <ul>
-                    <li class="nav-link" style="--i: .6s">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="nav-link" style="--i: 1.35s">
-                      <a href="#profil">PROFIL</a>
-                  </li>
-                  <li class="nav-link" style="--i: 1.35s">
-                    <a href="#team">TEAM</a>
-                </li>
-                <li class="nav-link" style="--i: 1.35s">
-                  <a href="#kontak">KONTAK</a>
-              </li>
-                    <li class="nav-link" style="--i: 1.1s">
-                        <a href="#">MORE<i class="fas fa-caret-down"></i></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li class="dropdown-link">
-                                    <a href="daftar_tugas.html">Daftar Tugas</a>
-                                </li>
-                                <li class="dropdown-link">
-                                    <a href="#">Bootcamp</a>
-                                </li>
-                                <li class="dropdown-link">
-                                  <a href="menu_game.html">Game</a>
-                              </li>
-                            </ul>
-                        </div>
-                    </li>
+        <ul class="links">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#profil">PROFIL</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <li><a href="#kontak">KONTAK</a></li>
+          <li>
+            <a href="#">MORE</a>
+            <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+            <ul class="htmlCss-sub-menu sub-menu">
+              <li><a href="daftar_tugas.html">Daftar Tugas</a></li>
+              <li><a href="#">BootCamp</a></li>
+              <li><a href="menu_game.html">Game</a></li>
+              <li class="more">
+                <span><a href="#">More</a>
+                <i class='bx bxs-chevron-right arrow more-arrow'></i>
+              </span>
+                <ul class="more-sub-menu sub-menu">
+                  <li><a href="#">-</a></li>
+                  <li><a href="#">-</a></li>
+                  <li><a href="#">-</a></li>
                 </ul>
-            </div>
-
-            <div class="log-sign" style="--i: 1.8s">
-                <a href="#" class="btn transparent">Log in</a>
-                <a href="#" class="btn solid">Sign up</a>
-            </div>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">FREAMEWORK</a>
+            <i class='bx bxs-chevron-down js-arrow arrow '></i>
+            <ul class="js-sub-menu sub-menu">
+              <li><a href="#">Codeigniter</a></li>
+              <li><a href="#">Laravel</a></li>
+              <li><a href="#">Aura</a></li>
+              <li><a href="#">Zend</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="search-box">
+        <i class='bx bx-search'></i>
+        <div class="input-box">
+          <input type="text" placeholder="Search...">
         </div>
-
-        <div class="hamburger-menu-container">
-            <div class="hamburger-menu">
-                <div></div>
-            </div>
-        </div>
+      </div>
     </div>
-</header>
+  </nav>
 
-  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
 
     <div class="w3-row-padding w3-padding-64 w3-container">
         <div class="w3-content">
@@ -322,41 +312,52 @@
 </footer>
 
 <script type="text/javascript">
-  $(".menu-toggle-btn").click(function(){
-    $(this).toggleClass("fa-times");
-    $(".navigation-menu").toggleClass("active");
-  });
-</script>
+    $(".menu-toggle-btn").click(function(){
+      $(this).toggleClass("fa-times");
+      $(".navigation-menu").toggleClass("active");
+    });
+  </script>
+  
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx0KOfrI9dDg2_oCNSmbNF3qDYVVbzEr1BD025t-i2j6v40v5NEWNKn2Xzj4C7XPX_HKQ/exec'
+  const form = document.forms['hasbi-contact-form'];
+  const btnkirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.my-alert');
+  
+  form.addEventListener('submit', e => {
+  e.preventDefault()
+  // ketika tombol submit diklik
+  // tampilkan tombol loading, hilangkan tombol kirim
+  btnLoading.classList.toggle('d-none');
+  btnkirim.classList.toggle('d-none');
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      // tampilkan tombol kirim, hilangkan tombol loading
+      btnLoading.classList.toggle('d-none');
+      btnkirim.classList.toggle('d-none');
+      //  tampilkan alert
+      myAlert.classList.toggle('d-none');
+      // reset formnya
+      form.reset();
+      console.log('Success!', response)
+    })
+    .catch(error => console.error('Error!', error.message))
+  })
+  </script>
 
 <script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbx0KOfrI9dDg2_oCNSmbNF3qDYVVbzEr1BD025t-i2j6v40v5NEWNKn2Xzj4C7XPX_HKQ/exec'
-const form = document.forms['hasbi-contact-form'];
-const btnkirim = document.querySelector('.btn-kirim');
-const btnLoading = document.querySelector('.btn-loading');
-const myAlert = document.querySelector('.my-alert');
-
-form.addEventListener('submit', e => {
-e.preventDefault()
-// ketika tombol submit diklik
-// tampilkan tombol loading, hilangkan tombol kirim
-btnLoading.classList.toggle('d-none');
-btnkirim.classList.toggle('d-none');
-fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => {
-    // tampilkan tombol kirim, hilangkan tombol loading
-    btnLoading.classList.toggle('d-none');
-    btnkirim.classList.toggle('d-none');
-    //  tampilkan alert
-    myAlert.classList.toggle('d-none');
-    // reset formnya
-    form.reset();
-    console.log('Success!', response)
-  })
-  .catch(error => console.error('Error!', error.message))
-})
+  function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "navbar") {
+    x.className += " responsive";
+    } else {
+    x.className = "navbar";
+    }
+  }
 </script>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<script type="text/javascript" src="js/website.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
