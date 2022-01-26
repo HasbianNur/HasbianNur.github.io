@@ -1,51 +1,108 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasbian Nur | Menu Game</title>
     <link rel="stylesheet" href="menu_game.css">
-    <title>Menu Game | Hasbian Nur</title>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
   </head>
+  <style>
+      a {
+          text-decoration: none;
+      }
+  </style>
   <body>
+    <!-- Awal Navbar -->
+    <nav>
+        <div class="navbar">
+          <i class='bx bx-menu'></i>
+          <div class="logo"><a href="#">XI-RPL</a></div>
+          <div class="nav-links">
+            <div class="sidebar-logo">
+              <span class="logo-name">XI-RPL</span>
+              <i class='bx bx-x' ></i>
+            </div>
+            <ul class="links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="post.html">POST</a></li>
+              <li><a href="https://www.youtube.com/channel/UCANGPr2O7POeWkh9CZR7f2A">YOUTUBE</a></li>
+              <li><a href="https://www.instagram.com/kingindo_30/">INSTAGRAM</a></li>
+            </ul>
+          </div>
+          <div class="search-box">
+            <i class='bx bx-search'></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Akhir Navbar -->
+    
+      <section>
+        <h1>Menu Game</h1>
+        <div id="article-list">
+            <article>
+                <a href="maze.html"><h3>1. Maze</h3></a>
+            </article>
+  
+            <article>
+                <a href="Block_flappy.html"><h3>2. Block Flappy</h3></a>
+            </article>
+  
+            <article>
+                <a href="Dino.html"><h3>3. Dino</h3></a>
+            </article>
+  
+            <article>
+                <a href="tikus_tanah.html"><h3>4. Pukul Tikus Tanah</h3></a>
+            </article>
+            
+            <article>
+                <a href=""><h3></h3></a>
+            </article>
+        </div>    
+    </section>
 
-    <header>
-      <img id="logo" src="img/logo.png" width="200px">
-          <nav>
-              <ul>
-                  <a href="index.html"><li>Home</li></a>
-                  <a href="https://www.youtube.com/channel/UCANGPr2O7POeWkh9CZR7f2A"><li>YouTube</li></a>
-                  <a href="https://www.instagram.com/kingindo_30/"><li>Instagram</li></a>
-              </ul>
-          </nav>
-    </header>
-
-    <section>
-      <h1>Menu Game</h1>
-      <div id="article-list">
-          <article>
-              <a href="maze.html"><h3>1. Maze</h3></a>
-          </article>
-
-          <article>
-              <a href="Block_flappy.html"><h3>2. Block Flappy</h3></a>
-          </article>
-
-          <article>
-              <a href="Dino.html"><h3>3. Dino</h3></a>
-          </article>
-
-          <article>
-              <a href="tikus_tanah.html"><h3>4. Pukul Tikus Tanah</h3></a>
-          </article>
-          
-          <article>
-              <a href=""><h3></h3></a>
-          </article>
-      </div>    
-  </section>
-
-  <footer>
-    &copy; 2021 Hasbian Nur
-  </footer>
+    <footer>
+        &copy; 2021-2022 XI-RPL.
+    </footer>
 
   </body>
-  </html>
+</html>
