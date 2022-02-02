@@ -8,6 +8,8 @@
 
 body {
   background-image: url(../img/pattern.jpg);
+  min-height: 100vh;
+  width: 100%;
 }
 
 html {
@@ -27,6 +29,76 @@ a {
   color: blue;
 }
 
+/* Copy Text */
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-boxes {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.text-boxes .text-box {
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+.text-boxes .text-box .topic {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin: 4px;
+}
+.text-boxes .text-box textarea {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid rgb(62, 141, 168);
+  border-radius: 8px;
+  background: white;
+}
+.text-box textarea::-webkit-scrollbar {
+  display: none;
+}
+.text-boxes .text-box button {
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: rgb(62, 141, 168);
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.text-boxes .text-box button:hover {
+  background: rgb(62, 141, 168);
+}
+@media (max-width: 400px) {
+  .text-boxes .text-box button {
+    width: 100%;
+  }
+}
+
+/* Akhir Copy Text */
+
 /* Galeri */
 .gallery {
   margin: 10px 50px;
@@ -43,6 +115,7 @@ a {
   filter: grayscale(0);
   transform: scale(1.1);
 }
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */

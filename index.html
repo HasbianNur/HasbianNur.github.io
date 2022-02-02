@@ -280,7 +280,26 @@
               <h1>HTML 5</h1>
               <p>HTML5 adalah sebuah bahasa markah untuk menstrukturkan dan menampilkan isi dari World Wide Web, sebuah teknologi inti dari Internet. HTML5 adalah revisi kelima dari HTML (yang pertama kali diciptakan pada tahun 1990 dan versi keempatnya, HTML4, pada tahun 1997) dan hingga bulan Juni 2011 masih dalam pengembangan. Tujuan utama pengembangan HTML5 adalah untuk memperbaiki teknologi HTML agar mendukung teknologi multimedia terbaru, mudah dibaca oleh manusia dan juga mudah dimengerti oleh mesin.</p>
               <p>HTML5 merupakan salah satu karya Konsortium World Wide Web (World Wide Web Consortium, W3C) untuk mendefinisikan sebuah bahasa markah tunggal yang dapat ditulis dengan cara HTML ataupun XHTML. HTML5 merupakan jawaban atas pengembangan HTML 4.01 dan XHTML 1.1 yang selama ini berjalan terpisah, dan diimplementasikansecara berbeda-beda oleh banyak perangkat lunak pembuat web.</p>
-              <p></p>
+              <div class="text-boxes">
+                <div class="text-box HTMLBox">
+                  <div class="topic">Code Awal HTML:</div>
+                  <textarea id="HTMLBox" readonly >
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                      <meta charset="UTF-8">
+                      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <title>Document</title>
+                    </head>
+                    <body>
+                      
+                    </body>
+                    </html>
+                  </textarea>
+                  <button id="HTMLButton">Copy</button>
+                </div>
+              </div>
           </div>
             <img src="img/html5.png" alt="HTML 5" style="float:right;width:325px;height:350px;">
             <div class="w3-third w3-center">
@@ -297,7 +316,15 @@
               
               <h1>Cara memanfaatkan CSS dalam Visual Studio Code</h1>
               <p>Langkah pertama adalah membuat file css tersebut dengan cara (namafile).css. Atau dengan salin source code di bawah ini</p>
-              <p> < link rel="stylesheet" href="style.css" > </p>
+              <div class="text-boxes">
+                <div class="text-box CSSBox">
+                  <div class="topic">Code Awal Css:</div>
+                  <textarea id="CSSBox" readonly >
+                    <link rel="stylesheet" href="style.css">
+                  </textarea>
+                  <button id="CSSButton">Copy</button>
+                </div>
+              </div>
           </div>
             <img src="img/css.png" alt="CSS" style="float:right;width:325px;height:350px;">
             <div class="w3-third w3-center">
@@ -311,6 +338,43 @@
               <h1>Bootstrap</h1>
               <p>Bootstrap adalah kerangka kerja CSS yang sumber terbuka dan bebas untuk merancang situs web dan aplikasi web. Kerangka kerja ini berisi templat desain berbasis HTML dan CSS untuk tipografi, formulir, tombol, navigasi, dan komponen antarmuka lainnya, serta juga ekstensi opsional JavaScript. Tidak seperti kebanyakan kerangka kerja web lainnya, kerangka kerja ini hanya fokus pada pengembangan front-end saja.</p>
               <p>Pada 29 Oktober 2014, Mark Otto mengumumkan bahwa Bootstrap 4 sedang dalam pengembangan.[9] Versi alfa pertama dari Bootstrap 4 dirilis pada 19 Agustus 2015.[10] Pada 6 September 2016, Mark menghentikan pengerjaan Bootstrap 3 dalam rangka untuk meluangkan waktu untuk pengerjaan Bootstrap 4. Sejauh ini, sudah lebih dari 17.500 kommit yang telah dibuat untuk basis kode Bootstrap 4. Versi beta pertama dirilis pada 10 Agustus 2017.</p>
+              <div class="text-boxes">
+                <div class="text-box B4Box">
+                  <div class="topic">Code Awal Bootstrap 4:</div>
+                  <textarea id="B4Box" readonly >
+                    <!doctype html>
+                    <html lang="en">
+                      <head>
+                        <!-- Required meta tags -->
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                        <!-- Bootstrap CSS -->
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+                        <title>Hello, world!</title>
+                      </head>
+                      <body>
+                        <h1>Hello, world!</h1>
+
+                        <!-- Optional JavaScript; choose one of the two! -->
+
+                        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+                        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+                        <!-- Option 2: Separate Popper and Bootstrap JS -->
+                        <!--
+                        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+                        -->
+                      </body>
+                    </html>
+                  </textarea>
+                  <button id="B4Button">Copy</button>
+                </div>
+              </div>
           </div>
             <img src="img/bootstrap.png" alt="Bootstrap 4" style="float:right;width:325px;height:350px;">
             <div class="w3-third w3-center">
@@ -474,6 +538,7 @@
   <p class="float-right"><a href="#">Kembali Ke Atas</a></p>
   <p>&copy; 2021-2022 XI-RPL.</a></p>
 </footer>
+<!-- Akhir Footer -->
 
 <script type="text/javascript">
     $(".menu-toggle-btn").click(function(){
@@ -520,6 +585,48 @@
     }
   }
 </script>
+
+<!-- Awal Javascript Copy Text -->
+<script>
+  // HTML BOx JS Code
+    let HTMLBox = document.getElementById("HTMLBox");
+    let HTMLButton = document.getElementById("HTMLButton");
+
+    HTMLButton.onclick = function() {
+      HTMLBox.select();
+      document.execCommand("copy");
+      HTMLButton.innerText = "Copy Berhasil !"
+    }
+
+    // CSS Box Js Code
+      let CSSBox = document.getElementById("CSSBox");
+      let CSSButton = document.getElementById("CSSButton");
+
+      CSSButton.onclick = function() {
+        CSSBox.select();
+        document.execCommand("copy");
+        CSSButton.innerText = "Copy Berhasil !"
+      }
+    // JavaScript BOx JS Code
+      let JSBox = document.getElementById("JSBox");
+      let JSButton = document.getElementById("JSButton");
+
+      JSButton.onclick = function() {
+        JSBox.select();
+        document.execCommand("copy");
+        JSButton.innerText = "Copy Berhasil !"
+      }
+      // Bootstrap BOx B4 Code
+      let B4Box = document.getElementById("B4Box");
+      let B4Button = document.getElementById("B4Button");
+
+      B4Button.onclick = function() {
+        B4Box.select();
+        document.execCommand("copy");
+        B4Button.innerText = "Copy Berhasil !"
+      }
+  </script>
+<!-- Akhir Javascript Copy Text -->
 
 <script type="text/javascript" src="js/index.js"></script>
 <!-- <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script> -->
