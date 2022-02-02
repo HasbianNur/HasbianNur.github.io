@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../img/pattern.jpg);
+  background-color: white;
   min-height: 100vh;
   width: 100%;
 }
