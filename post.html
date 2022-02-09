@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XI-RPL | Post</title>
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- AOS Css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
 
@@ -139,7 +142,7 @@
       <div class="wrap">
           <table>
               <tr>
-                  <td rowspan="8" width="100px"> <img src="img/WhatsApp Image 2022-01-20 at 16.18.16.jpeg" width="200px" style="display: block;border-radius: 5%;border-color:white;margin-right:30px" border="2px" ></td>
+                  <td rowspan="8" width="100px"> <img src="img/WhatsApp Image 2022-01-20 at 16.18.16.jpeg" data-aos="zoom-out-right" width="200px" style="display: block;border-radius: 5%;border-color:white;margin-right:30px" border="2px" ></td>
               </tr>
               <tr>
                   <td><b>Nama</b></td>
@@ -167,7 +170,7 @@
       <h2 class="team">TEAM</h2>
       <p class="w3-opacity w3-center"><i>Temui Team Kita!</i></p><br>
       <div class="card-group">
-        <div class="card">
+        <div class="card" data-aos="flip-left" data-aos-duration="500">
           <img src="img/WhatsApp Image 2022-01-20 at 16.18.16.jpeg" class="card-img-top" alt="Hasbian Nur">
           <div class="card-body">
             <h5 class="card-title">Hasbian Nur</h5>
@@ -179,8 +182,8 @@
             </ul>
           </div>
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="50">
+          <img src="img/liga.jpeg" class="card-img-top" alt="Liga">
           <div class="card-body">
             <h5 class="card-title">Nama</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -191,8 +194,8 @@
             </ul>
           </div>
         </div>
-        <div class="card">
-          <img src="..." class="card-img-top" alt="...">
+        <div class="card" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
+          <img src="img/nasa.jpeg" class="card-img-top" alt="Nasa">
           <div class="card-body">
             <h5 class="card-title">Nama</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -208,7 +211,7 @@
     <!-- Akhir Team -->
 
     <!-- Awal Kontak -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="kontak">
+    <div class="w3-container w3-content w3-padding-64" data-aos="flip-up" data-aos-delay="200" style="max-width:800px" id="kontak">
       <h2 class="w3-wide w3-center">KONTAK</h2>
       <p class="w3-opacity w3-center"><i>Ada Pesan? Kirimkan Pesan Anda!</i></p>
       <div class="w3-row w3-padding-32">
@@ -301,6 +304,13 @@ function myFunction() {
   }
 }
 </script>
+
+<!-- Awal Javascript AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Akhir Javascript AOS -->
 
 <script type="text/javascript" src="js/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
