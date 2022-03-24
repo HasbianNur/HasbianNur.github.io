@@ -13,6 +13,12 @@
 
   <!-- AOS Css -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS Loader -->
+  <link rel="stylesheet" href="css/loader.css">
+
+  <!-- Loader -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -71,6 +77,11 @@
 </head>
 
 <body>
+
+  <div class="loader_bg">
+    <div class="loader"></div>
+  </div>
+
   <!-- Awal Navbar -->
   <nav>
     <div class="navbar">
@@ -88,6 +99,7 @@
           <li><a href="#team">TEAM <i class="bi bi-people-fill"></i></a></li>
           <li><a href="#kontak">KONTAK <i class="bi bi-telephone-fill"></i></a></li>
           <li><a href="post.html">POST <i data-feather="file-text"></i></a></li>
+          <li><a href="loader.html">Loader <i data-feather="file-text"></i></a></li>
           <li>
             <a href="#">MORE</a>
             <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
@@ -709,8 +721,8 @@
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom" data-aos="fade-right" data-aos-duration="1000">
         <i class="bi bi-geo-alt-fill"></i> Kalimantan Timur,Balikpapan<br>
-        <i class="bi bi-discord"></i> Discord: <a href="https://github.com/HasbianNur" class="text-decoration-none">My
-          Discord</a><br>
+        <i class="bi bi-github"></i> Github: <a href="https://github.com/HasbianNur" class="text-decoration-none">My
+          Github</a><br>
         <i class="bi bi-envelope-fill"></i> Email: kitaraja600@gmail.com<br>
       </div>
       <div class="w3-col m6" data-aos="fade-left" data-aos-duration="1000">
@@ -769,9 +781,18 @@
 
   <!-- Footer -->
   <footer class="container">
-    <p>&copy; 2021-2022 XI-RPL. <i class="bi bi-heart-fill" style="color: red;"></i></p>
+    <p class="fst-italic">&copy; 2021-2022 XI-RPL. <i class="bi bi-heart-fill" style="color: red;"></i></p>
   </footer>
   <!-- Akhir Footer -->
+
+  <!-- Awal Loader -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+  <!-- Akhir Loader -->
 
   <script type="text/javascript">
     $(".menu-toggle-btn").click(function () {
