@@ -1,40 +1,32 @@
-  // search-box open close js code
-  let navbar = document.querySelector(".navbar");
-  let searchBox = document.querySelector(".search-box .bx-search");
-  // let searchBoxCancel = document.querySelector(".search-box .bx-x");
-  
-  searchBox.addEventListener("click", ()=>{
-    navbar.classList.toggle("showInput");
-    if(navbar.classList.contains("showInput")){
-      searchBox.classList.replace("bx-search" ,"bx-x");
-    }else {
-      searchBox.classList.replace("bx-x" ,"bx-search");
+const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
+
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode ==="dark"){
+    body.classList.toggle("dark");
+}
+
+let getStatus = localStorage.getItem("status");
+if(getStatus && getStatus ==="close"){
+    sidebar.classList.toggle("close");
+}
+
+modeToggle.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+        localStorage.setItem("mode", "dark");
+    }else{
+        localStorage.setItem("mode", "light");
     }
-  });
-  
-  // sidebar open close js code
-  let navLinks = document.querySelector(".nav-links");
-  let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-  let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-  menuOpenBtn.onclick = function() {
-  navLinks.style.left = "0";
-  }
-  menuCloseBtn.onclick = function() {
-  navLinks.style.left = "-100%";
-  }
-  
-  
-  // sidebar submenu open close js code
-  let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-  htmlcssArrow.onclick = function() {
-   navLinks.classList.toggle("show1");
-  }
-  let moreArrow = document.querySelector(".more-arrow");
-  moreArrow.onclick = function() {
-   navLinks.classList.toggle("show2");
-  }
-  let jsArrow = document.querySelector(".js-arrow");
-  jsArrow.onclick = function() {
-   navLinks.classList.toggle("show3");
-  }
-  
+});
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
