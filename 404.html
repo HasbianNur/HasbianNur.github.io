@@ -1,31 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
         <title>Halaman Tidak Ditemukan :(</title>
-        <link rel="stylesheet" href="/css/404.css">
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <!-- Web Application Manifest -->
+        <link rel="manifest" href="/manifest.json">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Web Starter Kit">
+        <link rel="icon" sizes="192x192" href="/images/touch/chrome-touch-icon-192x192.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+        <link rel="apple-touch-icon" href="/images/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="/images/touch/ms-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#2F3BA2">
     </head>
     <body>
-        <div class="container" data-aos="fade-down" data-aos-duration="1000">
-            <h1>Tidak Ditemukan <span>:(</span></h1>
-            <p>Maaf, tapi halaman yang Anda coba lihat tidak ada.</p>
-            <p>Sepertinya ini adalah hasil dari:</p>
-            <ul>
-                <li>Alamat yang salah ketik</li>
-                <li>Tautan kedaluwarsa</li>
-                <li>Yang membuat website ini belum selesai membuat nya</li>
-            </ul>
-            <script>
-                var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
-            </script>
-            <script src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
-
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-              AOS.init();
-            </script>
+        <div id="layoutError">
+            <div id="layoutError_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="text-center mt-4">
+                                    <img class="mb-4 img-error" src="Dashboard/assets/img/error-404-monochrome.svg" />
+                                    <p class="lead">Maaf, tapi halaman yang Anda coba lihat tidak ada.</p>
+                                    <a class="text-decoration-none" href="/index.html">
+                                        <i class="fas fa-arrow-left me-1"></i>
+                                        Kembali ke Halaman Utama
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div id="layoutError_footer">
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">XI-RPL 2021-2022 <i style="color: red;" class="bi bi-heart-fill"></i></div>
+                            <div>
+                                <a class="text-decoration-none" href="#">Privacy Policy</a>
+                                &middot;
+                                <a class="text-decoration-none" href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
