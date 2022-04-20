@@ -6,31 +6,61 @@
   <title>XI-RPL | Login</title>
   <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Web Starter Kit">
+  <link rel="icon" sizes="192x192" href="/images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+  <link rel="apple-touch-icon" href="/images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="/images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
 </head>
 <body>
-  <div class="wrapper">
-    <header>Login Form</header>
-    <form action="dashboard/index.html">
-      <div class="field email">
-        <div class="input-area">
-          <input type="text" placeholder="Email">
-          <i class="icon fas fa-envelope"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
-        </div>
-        <div class="error error-txt">Email Tidak Boleh Kosong!</div>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="">
+        <label>Username</label>
       </div>
-      <div class="field password">
-        <div class="input-area">
-          <input type="password" placeholder="Password">
-          <i class="icon fas fa-lock"></i>
-          <i class="error error-icon fas fa-exclamation-circle"></i>
-        </div>
-        <div class="error error-txt">Password Tidak Boleh Kosong!</div>
+      <div class="user-box">
+        <input type="password" name="" required="">
+        <label>Password</label>
       </div>
-      <div class="pass-txt"><a href="#">Lupa Password?</a></div>
-      <input type="submit" value="Login">
+      <a href="/dashboard.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Submit
+      </a>
+
+      <a href="/post.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Kembali
+      </a>
+
+      <a href="/register.html">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Belum punya akun?
+      </a>
     </form>
-    <div class="sign-txt">Belum punya akun? <a href="/register.html" class="text-decoration-none">Daftar Disini!</a></div>
   </div>
 
   <script src="js/login.js"></script>
