@@ -15,65 +15,113 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/navbar.css" rel="stylesheet" />
+
+        <!-- Bootstrap Icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+        <!-- Box Icon -->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="https://sid.universitasmulia.ac.id/wp-content/uploads/2020/09/logo-2.png?1655686503" style="width: 200px;" alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              About
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                              <li><a class="dropdown-item" href="#">Visi dan Misi</a></li>
-                              <li><a class="dropdown-item" href="#">Struktur</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Akademik
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">konsentrasi</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Info
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Jadwal</a></li>
-                                <li><a class="dropdown-item" href="#">Judul TA Genap 2021/2022</a></li>
-                                <li><a class="dropdown-item" href="#">Judul Kerja Praktek Genap 2021/2022</a></li>
-                                <li><a class="dropdown-item" href="#">Yudisium</a></li>
-                                <li><a class="dropdown-item" href="#">Wisuda</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Layanan
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Lupa Password Sias</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    
+        <nav>
+            <div class="navbar sticky-top">
+              <i class='bx bx-menu'></i>
+              <img src="https://sid.universitasmulia.ac.id/wp-content/uploads/2020/09/logo-2.png?1655686503" style="width: 200px;" alt="..." />
+              <div class="nav-links">
+                <div class="sidebar-logo">
+                  <span class="logo-name">XI-RPL</span>
+                  <i class='bx bx-x'></i>
                 </div>
+                <ul class="links">
+                    <li>
+                        <a href="#">ABOUT</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                          <li><a href="/daftar-tugas.html">VISI MISI <i class="bi bi-book-fill"></i></a></li>
+                          <li><a href="/galeri.html">STRUKTUR <i class="bi bi-image-fill"></i></a></li>
+                          <li class="more">
+                            <span><a href="#">More</a>
+                            <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                          </span>
+                            <ul class="more-sub-menu sub-menu">
+                              <li><a href="/portofolio/index.html">My Portofolio <i class="bi bi-person-workspace"></i></a></li>
+                              <li><a href="/coming-soon.html">Coming Soon</a></li>
+                              <li><a href="/coming-soon.html">Coming Soon</a></li>
+                            </ul>
+                      </li>
+                    </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">AKADEMIK</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                          <li class="more">
+                            <span><a href="#">Konsentrasi <i class='bx bxs-chevron-right arrow more-arrow'></i></a>
+                          </span>
+                            <ul class="more-sub-menu sub-menu">
+                              <li><a href="/portofolio/index.html">Digital Art & Design <i class="bi bi-art-fill"></i></a></li>
+                              <li><a href="/coming-soon.html">Business Information Technology</a></li>
+                            </ul>
+                            <li><a href="/galeri.html">Kurikulum</a></li>
+                            <ul class="htmlCss-sub-menu sub-menu">
+                              <li class="more">
+                                <span><a href="#">Template <i class='bx bxs-chevron-right arrow more-arrow'></i></a>
+                              </span>
+                                <ul class="more-sub-menu sub-menu">
+                                  <li><a href="/portofolio/index.html">Kerja Praktek <i class="bi bi-art-fill"></i></a></li>
+                                  <li><a href="/coming-soon.html">Tugas Akhir </a></li>
+                                  <li><a href="/coming-soon.html">Jurnal </a></li>
+                                </ul>
+                          </li>
+                      </li>
+                    </ul>
+                    </li>
+                </ul>
+
+                <li>
+                    <a href="#">INFO</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                    <ul class="htmlCss-sub-menu sub-menu">
+                      <li class="more">
+                        <span><a href="#">Jadwal <i class='bx bxs-chevron-right arrow more-arrow'></i></a>
+                      </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="/portofolio/index.html">Sidang KKP</a></li>
+                          <li><a href="/coming-soon.html">Sidang Tugas Akhir</a></li>
+                        </ul>
+                        <li><a href="/galeri.html">Judul TA Genap 2021/2022</a></li>
+                        <li><a href="/galeri.html">Judul Kerja Praktek Genap 2021/2022</a></li>
+                        <li><a href="/galeri.html">Yudisium<a></li>
+                  </li>
+                </ul>
+                </li>
+
+                <li>
+                    <a href="#">layanan</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
+                    <ul class="htmlCss-sub-menu sub-menu">
+                        <li><a href="/galeri.html">Lupa Password Sias</a></li>
+                  </li>
+                </ul>
+                </li>
+
+              </div>
+              <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                  <input type="text" placeholder="Cari">
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
+          <!-- Akhir navbar -->
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
@@ -103,7 +151,7 @@
                             <i class="fas fa-school fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Universitas Mulia</h4>
-                        <p class="text-muted">Program Studi D3 Sistem Informasi (dahulu Manajemen Informatika STMIK Stikom Balikpapan) merupakan satu-satunya program pendidikan VOKASI dan telah TERAKREDITASI B oleh BAN PT, yang ada di Fakultas Ilmu Komputer Universitas Mulia Balikpapan.</p>
+                        <p class="text-center">Program Studi D3 Sistem Informasi (dahulu Manajemen Informatika STMIK Stikom Balikpapan) merupakan satu-satunya program pendidikan VOKASI dan telah TERAKREDITASI B oleh BAN PT, yang ada di Fakultas Ilmu Komputer Universitas Mulia Balikpapan.</p>
                     </div>
                     <div class="col-md-4">
                         <!-- <span class="fa-stack fa-4x">
@@ -275,50 +323,6 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-        </section>
-        <!-- layanan-->
-        <section class="page-section bg-light" id="layanan">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">LAYANAN</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="layanan-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/layanan/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="layanan-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/layanan/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="layanan-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/layanan/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
             </div>
         </section>
         <!-- Contact-->
