@@ -89,6 +89,13 @@
   --bs-body-bg: #fff;
 }
 
+.gambar-logo {
+  position: absolute;
+  left: 42%;
+  top: 895px;
+  z-index: 1;
+}
+
 *,
 *::before,
 *::after {
