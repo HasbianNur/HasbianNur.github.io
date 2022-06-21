@@ -339,30 +339,26 @@
                 <!-- To make this form functional, sign up at-->
                 <!-- https://startbootstrap.com/solution/contact-forms-->
                 <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <form name="hasbi-contact-form" id="contactForm" data-sb-form-api-token="API_TOKEN">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Nama Anda *" data-sb-validations="required" />
+                                <input class="form-control" id="name" type="text" name="nama" placeholder="Nama Anda *" data-sb-validations="required" />
                                 <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                             </div>
                             <div class="form-group">
                                 <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Email Anda *" data-sb-validations="required,email" />
+                                <input class="form-control" id="email" type="email" name="email" placeholder="Email Anda *" data-sb-validations="required,email" />
                                 <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                 <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="No Telepon Anda *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group form-group-textarea mb-md-0">
                                 <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Pesan Anda*" data-sb-validations="required"></textarea>
+                                <label for="pesan" class="form-label fw-bold"></label>
+                                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                         </div>
@@ -377,7 +373,10 @@
                     <!-- an error submitting the form-->
                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error Mengirim Pesan!</div></div>
                     <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Kirim Pesan</button></div>
+                    <button type="submit" class="btn btn-warning btn-kirim text-light">Kirim <i data-feather="send"></i></button>
+                    <button class="btn btn-warning btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    <span class="visually-hidden">Loading...</span>
                 </form>
             </div>
         </section>
@@ -614,5 +613,34 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx0KOfrI9dDg2_oCNSmbNF3qDYVVbzEr1BD025t-i2j6v40v5NEWNKn2Xzj4C7XPX_HKQ/exec'
+            const form = document.forms['hasbi-contact-form'];
+            const btnkirim = document.querySelector('.btn-kirim');
+            const btnLoading = document.querySelector('.btn-loading');
+            const myAlert = document.querySelector('.my-alert');
+        
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              // ketika tombol submit diklik
+              // tampilkan tombol loading, hilangkan tombol kirim
+              btnLoading.classList.toggle('d-none');
+              btnkirim.classList.toggle('d-none');
+              fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                  // tampilkan tombol kirim, hilangkan tombol loading
+                  btnLoading.classList.toggle('d-none');
+                  btnkirim.classList.toggle('d-none');
+                  //  tampilkan alert
+                  myAlert.classList.toggle('d-none');
+                  // reset formnya
+                  form.reset();
+                  console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
     </body>
 </html>
